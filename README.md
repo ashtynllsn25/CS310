@@ -21,5 +21,3 @@ This repository contains my solution for Chapter 3, Exercise 7 of CS310. The pro
 1. Open a terminal or command prompt.
 2. Navigate to the project folder.
 3. Compile the program using a C++ compiler:
-   ```bash
-   g++ Ch03Exercise07.cpp -o Ch03Exercise07
