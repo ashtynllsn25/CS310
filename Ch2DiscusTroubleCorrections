@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main() {
+    int var1, var2;
+    double sum;
+
+    std::cout << "Enter two numbers to add and multiply: ";
+    std::cin >> var1 >> var2;  
+    // FIX: Changed 'cin' to 'std::cin' since cin is part of the std namespace.
+
+    sum = var1 + var2;
+
+    std::cout << "Sum: " << sum << std::endl;  
+    // FIX: Changed 'result' to 'sum' since 'result' was never declared.
+
+    std::cout << "Product: " << var1 * var2 << std::endl;  
+    // FIX: Changed 'var3' to 'var2' since 'var3' was never declared.
+
+    return 0;  
+    // Added 'return 0;' for good practice to indicate successful program completion.
+}
