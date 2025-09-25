@@ -15,7 +15,7 @@ int main() {
     cin >> ifPet;
     
     // Check if the user said no
-    if (ifPet == N || ifPet == n) {  // ERROR: N and n should be in quotes
+    if (ifPet == N || ifPet == n) { 
         cout << "You don't have a pet!" << endl;
     } else  // If the user said yes
         // Ask what kind of pet
@@ -30,4 +30,5 @@ int main() {
         cout << "You have a " << petType << " named " << petName << "!" << endl;
 
     return 0;
+
 }
