@@ -1,3 +1,6 @@
+\\ --- Ashtyn Ellison - Programming with C++ ---
+\\ --- Chapter 4 Excercise 16 --- 
+
 #include <iostream>
 #include <iomanip>
 
@@ -57,4 +60,5 @@ int main() {
     }
 
     return 0;
+
 }
