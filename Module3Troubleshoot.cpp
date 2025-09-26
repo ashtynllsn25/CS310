@@ -1,5 +1,5 @@
-// Ashtyn Ellison - Programming with C++
-// Module 3 Troubleshooting Discussion 
+// ---- Ashtyn Ellison - Programming with C++ ---
+// --- Module 3 Troubleshooting Discussion --- 
 
 #include <iostream>
 
@@ -32,3 +32,4 @@ int main() {
     return 0;
 
 }
+
