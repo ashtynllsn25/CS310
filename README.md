@@ -11,7 +11,7 @@ Projects from my Computer Science coursework, showcasing coding practice, proble
 
 This repository contains my solution for Chapter 3, Exercise 7 of CS310. The program calculates the monthly interest on a credit card balance using the average daily balance formula. The program takes inputs for starting balance, payment, days in the billing cycle, days left after payment, and monthly interest rate, and outputs the interest amount to the console and a text file.
 
-## CS310 - Ch04Exercise16
+# CS310 - Ch04Exercise16
 
 This repository contains my solution for Chapter 4, Exercise 16 of CS310. The program helps an author estimate potential royalties from a new romance novel based on three different publishing contract options. The program prompts the user to enter the net price of a single copy of the novel and an estimated number of copies that will be sold. It then calculates the royalties for each of the following contract options:
 
@@ -21,10 +21,15 @@ This repository contains my solution for Chapter 4, Exercise 16 of CS310. The pr
 
 After calculating, the program outputs the royalties for all three options and clearly identifies which option yields the highest estimated earnings.
 
+# CS310 - Ch05Exercise33
+
+This program simulates Bianca preparing dishes within a limited time. It takes input for the first dish, total time available, and subsequent dish times, then calculates how many dishes she can make. Includes simple input validation for positive values.
+
 ## Files
 
 - `Ch03Exercise07.cpp` : The C++ source code for calculating monthly interest.
 - `Ch04Exercise16.cpp` : The C++ source code for calculating and comparing author royalties.
+- `Ch05Exercise33.cpp` : The C++ source code for simulating cooking times.
 - `README.md` : This file.
 
 ## How to Run
