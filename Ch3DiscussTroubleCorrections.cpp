@@ -1,5 +1,5 @@
-\\ --- Ashtyn Ellison - Programming with C++ ---
-\\ --- Module 3 Code Correction --- 
+// --- Ashtyn Ellison - Programming with C++ ---
+// --- Module 3 Code Correction --- 
 
 #include <iostream>
 using namespace std;
@@ -21,4 +21,5 @@ int main() {
     }
 
     return 0;   // Added return statement for completeness
+
 }
