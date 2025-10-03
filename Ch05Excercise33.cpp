@@ -1,3 +1,6 @@
+// --- Ashtyn Ellison - Programming with C++ ---
+// --- Chapter 5 Excercise 33 ---
+
 #include <iostream>
 using namespace std;
 
@@ -51,4 +54,5 @@ int main() {
     cout << "Bianca can prepare " << Dishes << " dishes." << endl;
 
     return 0;
+
 }
