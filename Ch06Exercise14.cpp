@@ -1,73 +1,62 @@
-#include <iostream>
-#include <iomanip> //
-using namespace std;
+// --- Ashtyn Ellison - Programming with C++ ---
+// --- Chapter 6 Exercise 14 ---
+
+#include <iostream> 
+#include <iomanip>
+using namespace std; 
 
 // --- Define Function ---
+// Calculate the billing amount base on variables given later ---
 double calculateBilling(double rate, int minutes, bool lowIncome) {
-    double billingAmount = 0.0;
+    double billingAmount = 0.0;  // final charge
 
     if (lowIncome && minutes <= 30) {
-        billingAmount = 0.0;
+        billingAmount = 0.0;    // Free under 30 minutes for low income
     }
     else if (lowIncome && minutes > 30) {
         int extraMinutes = minutes - 30;
-        billingAmount = rate * 0.40 * (extraMinutes / 60.0);
+        billingAmount = rate * 0.40 * (extraMinutes / 60.0);  // 40% rate for extra time
     }
     else if (!lowIncome && minutes <= 20) {
-        billingAmount = 0.0;
+        billingAmount = 0.0;    // Free under 20 minutes for others 
     }
-    else {
-        int extraMinutes = minutes - 20;
-        billingAmount = rate * 0.70 * (extraMinutes / 60.0);
+    else { 
+        int extraMinutes = minutes - 20; 
+        billingAmount = rate * 0.70 * (extraMinutes / 60.0);  // 70% rate for extra time
     }
-
     return billingAmount;
 }
 
 int main() {
+    // --- Variables ---
     double rate;
-    int minutes;
-    char incomeStatus;
-    bool lowIncome;
+    int minutes; 
+    char incomeStatus;   // holds the answer temporarily
+    bool lowIncome;      // stores true or false
 
-    cout << "Enter your hourly rate: ";
+    // --- User Input ---
+    cout << "Enter the hourly rate: ";
     cin >> rate;
-
+    
     cout << "Enter total consulting time in minutes: ";
     cin >> minutes;
 
-    cout << "Do you believe you qualify for low income (y/n)? ";
-    cin >> incomeStatus;
+    cout << "Does the person qualify for low income (y/n)? ";
+    cin >> incomeStatus;    
 
-    lowIncome = (incomeStatus == 'y' || incomeStatus == 'Y');
+    // --- Convert char to bool ---
+    lowIncome = (incomeStatus == 'y' || incomeStatus == 'Y'); 
 
-    // --- Double-check income ---
-    double yearlyIncome = rate * 40 * 52;
+    // --- Verify income ---
+    cout << "Low income status: " << boolalpha << lowIncome << endl;
 
-    cout << fixed << showpoint << setprecision(2);
-
-    if (lowIncome) {
-        cout << "\nEstimated yearly income: $" << yearlyIncome << endl;
-        if (yearlyIncome > 25000) {
-            cout << "Based on your hourly rate, you may NOT qualify for low income assistance.\n";
-            cout << "Would you still like to continue as low income (y/n)? ";
-            cin >> incomeStatus;
-            lowIncome = (incomeStatus == 'y' || incomeStatus == 'Y');
-        }
-    }
-
+    // --- Call function for calculation ---
     double totalCharge = calculateBilling(rate, minutes, lowIncome);
-
-    cout << "\n--- Billing Summary ---\n";
-    cout << "Hourly rate: $" << rate << " per hour\n";
-    cout << "Consulting time: " << minutes << " minutes\n";
-    cout << "Total billing amount: $" << totalCharge << endl;
-
-    if (lowIncome)
-        cout << "(Low income discount applied at 40% rate)\n";
-    else
-        cout << "(Standard rate applied at 70%)\n";
+    
+    // --- Show result ---
+    cout << fixed;
+    cout.precision(2);
+    cout << "\nTotal billing amount: $" << totalCharge << endl;
 
     return 0;
 }
-
