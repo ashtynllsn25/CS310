@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip> // <-- add this for formatting
+#include <iomanip> //
 using namespace std;
 
 // --- Define Function ---
@@ -44,7 +44,7 @@ int main() {
     // --- Double-check income ---
     double yearlyIncome = rate * 40 * 52;
 
-    cout << fixed << showpoint << setprecision(2); // 🔧 formatting fix
+    cout << fixed << showpoint << setprecision(2);
 
     if (lowIncome) {
         cout << "\nEstimated yearly income: $" << yearlyIncome << endl;
@@ -70,3 +70,4 @@ int main() {
 
     return 0;
 }
+
