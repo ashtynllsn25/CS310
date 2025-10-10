@@ -25,11 +25,16 @@ After calculating, the program outputs the royalties for all three options and c
 
 This program simulates Bianca preparing dishes within a limited time. It takes input for the first dish, total time available, and subsequent dish times, then calculates how many dishes she can make. Includes simple input validation for positive values.
 
+## CS310 - Ch06Exercise14
+
+This program calculates consulting charges for J&J Accounting based on hourly rate, consultation time, and income status. It determines whether a client qualifies for free or discounted service and outputs the total billing amount using a custom billing function.
+
 ## Files
 
 - `Ch03Exercise07.cpp` : The C++ source code for calculating monthly interest.
 - `Ch04Exercise16.cpp` : The C++ source code for calculating and comparing author royalties.
 - `Ch05Exercise33.cpp` : The C++ source code for simulating cooking times.
+- `Ch06Exercise14.cpp` : The C++ source code for calculating payments for tax help.
 - `README.md` : This file.
 
 ## How to Run
