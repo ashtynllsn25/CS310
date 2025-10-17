@@ -29,7 +29,8 @@ This program simulates Bianca preparing dishes within a limited time. It takes i
 
 This program calculates consulting charges for J&J Accounting based on hourly rate, consultation time, and income status. It determines whether a client qualifies for free or discounted service and outputs the total billing amount using a custom billing function.
 
-##CS310 - Ch07Exercise04
+## CS310 - Ch07Exercise04
+
 This program takes a user-input word and removes all vowels using a custom function. It checks for valid input (letters only) and outputs the word without vowels.
 
 ## Files
