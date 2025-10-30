@@ -22,7 +22,7 @@ public:
     // print pet info
     void displayPet() {
         cout << "Pet name: " << name << endl;
-        cout << "Pet type: " << type << endl; // (enum prints as number, that's ok)
+        cout << "Pet type: " << type << endl; 
     }
 };
 
@@ -51,13 +51,14 @@ public:
 
 class WrongPlacement {
 public:
-int main() {   // <-- main should NOT be inside a class
+int main() { 
     PetManager manager;
     
     manager.addPet();
 
-    manager.showPet; // should be manager.showPet();
-
+    manager.showPet;
+    
     return 0;
 }
+
 }; 
