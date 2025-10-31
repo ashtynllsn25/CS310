@@ -33,6 +33,10 @@ This program calculates consulting charges for J&J Accounting based on hourly ra
 
 This program takes a user-input word and removes all vowels using a custom function. It checks for valid input (letters only) and outputs the word without vowels.
 
+## CS310 - Ch10Exercise21
+
+A simple C++ program demonstrating a BankAccount class with deposit, withdraw, interest, and display functions. Uses an array to handle multiple accounts and auto-assigns account numbers.
+
 ## Files
 
 - `Ch03Exercise07.cpp` : The C++ source code for calculating monthly interest.
@@ -40,6 +44,7 @@ This program takes a user-input word and removes all vowels using a custom funct
 - `Ch05Exercise33.cpp` : The C++ source code for simulating cooking times.
 - `Ch06Exercise14.cpp` : The C++ source code for calculating payments for tax help.
 - `Ch07Exercise04.cpp` : The C++ source code for calculating payments for tax help.
+-  `Ch10Exercise21.cpp` : The C++ source code for simple bank functions.
 - `README.md` : This file.
 
 ## How to Run
