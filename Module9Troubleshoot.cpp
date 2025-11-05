@@ -49,12 +49,10 @@ int main() {
     cin >> catName;
     myCat.setName(catName);
 
-    // myDog.speak();
-    // myCat.speak();
-
     dogName.speak();  
 
     Doggo extraDog;  
 
     return 0;
+
 }
