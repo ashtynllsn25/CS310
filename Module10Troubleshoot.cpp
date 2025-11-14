@@ -57,10 +57,10 @@ int main() {
     Animal* randomPet;  
 
     printPetInfo(randomPet);  
-    // Calling a function on a pointer that points to nowhere → runtime crash
 
     delete dPtr;
     delete cPtr;
 
     return 0;
+
 }
